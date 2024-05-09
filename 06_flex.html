@@ -1,0 +1,44 @@
+<!-- 
+    Understanding display: flex
+
+Layout Model: 
+    When you apply display: flex; to a container element, its child elements become flex items. 
+    These flex items are laid out in a single line by default (similar to a row).
+
+    Flex Container: The container element becomes a flex container, 
+                    responsible for positioning its flex items according to the specified flex properties.
+ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .flex-container {
+        display: flex;
+        background-color: lightgray;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 2px solid black;
+        margin: 10px;
+      }
+
+      .flex-item {
+        background-color: lightblue;
+        margin: 5px;
+        padding: 10px;
+        font-size: 16px;
+        text-align: center;
+        box-sizing: border-box;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="flex-container">
+      <div class="flex-item">Item 1</div>
+      <div class="flex-item">Item 2</div>
+      <div class="flex-item">Item 3</div>
+    </div>
+  </body>
+</html>
