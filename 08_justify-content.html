@@ -1,0 +1,81 @@
+<!-- 
+
+    
+ -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .flex-container {
+        display: flex;
+        width: 400px; /* Wider to accommodate more items */
+        height: 120px;
+        border: 2px solid red;
+        margin-bottom: 20px;
+      }
+
+      .flex-item {
+        width: 60px;
+        height: 60px;
+        background-color: lightblue;
+        margin: 5px;
+        text-align: center;
+        line-height: 60px; /* Vertically center text */
+      }
+
+      /* Justify-content variations */
+      #center {
+        justify-content: center;
+      }
+
+      #flex-start {
+        justify-content: flex-start;
+      }
+
+      #flex-end {
+        justify-content: flex-end;
+      }
+
+      #space-between {
+        justify-content: space-between;
+      }
+
+      #space-around {
+        justify-content: space-around;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>justify-content Examples</h2>
+
+    <div class="flex-container" id="center">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+    </div>
+
+    <div class="flex-container" id="flex-start">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+    </div>
+
+    <div class="flex-container" id="flex-end">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+    </div>
+
+    <div class="flex-container" id="space-between">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+    </div>
+
+    <div class="flex-container" id="space-around">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+    </div>
+  </body>
+</html>
