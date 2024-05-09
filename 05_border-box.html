@@ -1,26 +1,7 @@
 <!-- 
-    Content-box (default): The width and height properties include only the content. Border, padding, or margin are not included.
-    Border-box: The width and height properties include content, padding, and border, but not the margin.
-    Initial: It is the default value. The width and height properties include only the content.
-    Inherit: It inherits the box-sizing property from its parent element.
-    The box-sizing property is used to tell the browser what the sizing properties (width and height) should include.
-    By default, the width and height properties include only the content.
-    The box-sizing property can make CSS layouts work more intuitively. For example, when you set width and height properties, you can apply any border and padding inside the box, without worrying about the box expanding.
-    The box-sizing property is specified as a single keyword chosen from the list of values below.
-    Syntax:
-    box-sizing: content-box|border-box|initial|inherit;
-    Values:
-    content-box: Default. The width and height properties include only the content. Border, padding, or margin are not included.
-    border-box: The width and height properties include content, padding, and border, but not the margin.
-    initial: Sets this property to its default value.
-    inherit: Inherits this property from its parent element.
-
-    
-    With the default box-sizing, here's what happens:
-
-The content itself (text) will only occupy 100px width and 100px height.
-The 10px padding will be added on top of the content on all sides, increasing the total width to 120px and height to 120px.
-The 5px black border will be drawn outside the padding, making the overall box even larger (visually 130px width and height).
+The 100px width and height include the padding and the border.
+The content will shrink to fit within the remaining space after accounting for the padding and border (80px width and height in this case).
+The border will be drawn inside the box, maintaining the overall dimensions of 100px width and 100px height.
 
  -->
 
