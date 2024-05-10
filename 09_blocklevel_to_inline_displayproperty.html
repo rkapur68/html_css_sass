@@ -1,0 +1,43 @@
+<!-- 
+    Block-Level vs. Inline Elements
+
+    Block-Level Elements: These elements typically start on a new line and occupy the full available width by default. 
+    Examples include div, h1-h6, p, form, and more.
+
+    Inline Elements: These elements typically exist on the same line with other content and only occupy the space needed 
+    for their content (text, images, etc.). 
+    Examples include span, a (anchor tags for links), strong, em, and more.
+
+
+    The display property allows you to control whether an element behaves as a block-level element or an inline element, overriding the default behavior
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .inline-div {
+        display: inline;
+        background-color: lightblue;
+        padding: 5px;
+      }
+      .block-span {
+        display: block;
+        background-color: lightgreen;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+    </style>
+    <title>CSS Display Property</title>
+  </head>
+  <body>
+    <p>
+      This is a paragraph with
+      <span class="inline-div">an inline div</span> inside.
+      <span class="block-span"
+        >This span element will behave like a block.</span
+      >
+    </p>
+  </body>
+</html>
